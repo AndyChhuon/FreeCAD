@@ -131,3 +131,7 @@ endif(BUILD_TUX)
 if(BUILD_WEB)
     add_subdirectory(Web)
 endif(BUILD_WEB)
+
+if(BUILD_CLOUD_SYNC)
+    add_subdirectory(CloudSync)
+endif(BUILD_CLOUD_SYNC)

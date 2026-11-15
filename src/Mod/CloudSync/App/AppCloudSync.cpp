@@ -23,6 +23,9 @@
  ***************************************************************************/
 
 
+#include <App/Application.h>
+#include <App/Document.h>
+
 #include <Python.h>
 
 
@@ -32,6 +35,7 @@
 
 #include <CXX/Extensions.hxx>
 #include <CXX/Objects.hxx>
+namespace sp = std::placeholders;
 
 
 namespace CloudSync
@@ -59,13 +63,17 @@ PyObject* initModule()
 
 }  // namespace CloudSync
 
+void slotNewDocument(const App::Document& Doc, bool isMainDoc)
+{
+    Base::Console().message("CloudSync: new document '{}' (label '{}', main={})\n",
+                        Doc.getName(), Doc.Label.getValue(), isMainDoc);
+}
 
 /* Python entry */
 PyMOD_INIT_FUNC(CloudSync)
 {
-    // ADD YOUR CODE HERE
-    //
-    //
+    App::GetApplication().signalNewDocument.connect(&slotNewDocument);
+
     PyObject* mod = CloudSync::initModule();
     Base::Console().log("Loading CloudSync module... done\n");
     PyMOD_Return(mod);

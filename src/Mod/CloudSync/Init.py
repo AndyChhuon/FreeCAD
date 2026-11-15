@@ -2,3 +2,4 @@
 
 # FreeCAD init script of the CloudSync module
 # (c) 2001 Juergen Riegel LGPL
+import CloudSync

@@ -1,9 +1,3 @@
-### Rebuild and launch
-
-- pixi run build-release
-- pixi run freecad-release
-- pixi run /Applications/CLion.app/Contents/MacOS/clion . &
-
 <a href="https://freecad.org"><img src="/src/Gui/Icons/freecad.svg" height="100px" width="100px"></a>
 
 ### Your own 3D Parametric Modeler
@@ -97,6 +91,13 @@ View these pages for more information:
 
 The [FreeCAD forum](https://forum.freecad.org) is a great place
 to find help and solve specific problems when learning to use FreeCAD.
+
+### Rebuild and launch
+
+- pixi run build-release
+- pixi run freecad-release
+
+- pixi run /Applications/CLion.app/Contents/MacOS/clion . &
 
 ---
 
