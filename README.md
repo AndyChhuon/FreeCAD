@@ -1,3 +1,9 @@
+### Rebuild and launch
+
+- pixi run build-release
+- pixi run freecad-release
+- pixi run /Applications/CLion.app/Contents/MacOS/clion . &
+
 <a href="https://freecad.org"><img src="/src/Gui/Icons/freecad.svg" height="100px" width="100px"></a>
 
 ### Your own 3D Parametric Modeler
@@ -9,68 +15,61 @@
 [Git repository](https://github.com/FreeCAD/FreeCAD) •
 [Blog](https://blog.freecad.org)
 
-
 [![Release](https://img.shields.io/github/release/freecad/freecad.svg)](https://github.com/freecad/freecad/releases/latest) [![Crowdin](https://d322cqt584bo4o.cloudfront.net/freecad/localized.svg)](https://crowdin.com/project/freecad)
 
 <img src="/.github/images/partdesign.jpg" width="800"/>
 
-Overview
---------
+## Overview
 
-* **Freedom to build what you want**  FreeCAD is an open-source parametric 3D
-modeler for designing real-life objects of any size. Parametric modeling lets
-you modify a design by changing parameters in its model history.
+- **Freedom to build what you want** FreeCAD is an open-source parametric 3D
+  modeler for designing real-life objects of any size. Parametric modeling lets
+  you modify a design by changing parameters in its model history.
 
-* **Create 3D from 2D and back** FreeCAD lets you sketch geometry-constrained
-2D shapes and use them as a base to build other objects. It also provides tools
-to adjust dimensions and create high-quality production drawings from 3D models.
+- **Create 3D from 2D and back** FreeCAD lets you sketch geometry-constrained
+  2D shapes and use them as a base to build other objects. It also provides tools
+  to adjust dimensions and create high-quality production drawings from 3D models.
 
-* **Designed for your needs** FreeCAD is designed to fit a wide range of uses
-including product design, mechanical engineering and architecture,
-whether you are a hobbyist, programmer, experienced CAD user, student or teacher.
+- **Designed for your needs** FreeCAD is designed to fit a wide range of uses
+  including product design, mechanical engineering and architecture,
+  whether you are a hobbyist, programmer, experienced CAD user, student or teacher.
 
-* **Cross platform** FreeCAD runs on Windows, macOS and Linux operating systems.
+- **Cross platform** FreeCAD runs on Windows, macOS and Linux operating systems.
 
-* **Underlying technology**
-    * **OpenCASCADE** A powerful geometry kernel, the most important component of FreeCAD
-    * **Coin3D library** Open Inventor-compliant 3D scene representation model
-    * **Python** FreeCAD offers a broad Python API
-    * **Qt** Graphical user interface built with Qt
+- **Underlying technology**
+  - **OpenCASCADE** A powerful geometry kernel, the most important component of FreeCAD
+  - **Coin3D library** Open Inventor-compliant 3D scene representation model
+  - **Python** FreeCAD offers a broad Python API
+  - **Qt** Graphical user interface built with Qt
 
-
-Installing
-----------
+## Installing
 
 Precompiled packages for stable releases are available for Windows, macOS and Linux on the
 [latest releases page](https://github.com/FreeCAD/FreeCAD/releases/latest).
 
-On most Linux distributions, FreeCAD is also directly installable from the 
+On most Linux distributions, FreeCAD is also directly installable from the
 software center application.
 
 For weekly development releases visit the [releases page](https://github.com/FreeCAD/FreeCAD/releases/).
 
 Other options are described on the [wiki Download page](https://wiki.freecad.org/Download).
 
-Compiling
----------
+## Compiling
 
 See the [Developers Handbook – Getting Started](https://freecad.github.io/DevelopersHandbook/gettingstarted/)
 for build instructions.
 
-
-Reporting Issues
----------
+## Reporting Issues
 
 To report an issue please:
 
-- Consider posting to the [Forum](https://forum.freecad.org), [Discord](https://discord.com/invite/w2cTKGzccC) channel, or [Reddit](https://www.reddit.com/r/FreeCAD) to verify the issue; 
-- Search the existing [issues](https://github.com/FreeCAD/FreeCAD/issues) for potential duplicates; 
-- Use the most updated stable or [development versions](https://github.com/FreeCAD/FreeCAD/releases/) of FreeCAD; 
-- Post version info from `Help > About FreeCAD > Copy to clipboard`; 
+- Consider posting to the [Forum](https://forum.freecad.org), [Discord](https://discord.com/invite/w2cTKGzccC) channel, or [Reddit](https://www.reddit.com/r/FreeCAD) to verify the issue;
+- Search the existing [issues](https://github.com/FreeCAD/FreeCAD/issues) for potential duplicates;
+- Use the most updated stable or [development versions](https://github.com/FreeCAD/FreeCAD/releases/) of FreeCAD;
+- Post version info from `Help > About FreeCAD > Copy to clipboard`;
 - Restart FreeCAD in safe mode `Help > Restart in safe mode` and try to reproduce the issue again. If the issue is resolved it can be fixed by deleting the FreeCAD config files.
-- Start recording a macro `Macro > Macro recording...` and repeat all steps. Stop recording after the issue occurs and upload the saved macro or copy the macro code in the issue; 
-- Post a Step-By-Step explanation on how to recreate the issue; 
-- Upload an example file (FCStd as ZIP file) to demonstrate the problem; 
+- Start recording a macro `Macro > Macro recording...` and repeat all steps. Stop recording after the issue occurs and upload the saved macro or copy the macro code in the issue;
+- Post a Step-By-Step explanation on how to recreate the issue;
+- Upload an example file (FCStd as ZIP file) to demonstrate the problem;
 
 For more details see:
 
@@ -80,13 +79,11 @@ For more details see:
 - [Help Forum](https://forum.freecad.org/viewforum.php?f=3)
 
 > [!NOTE]
-The [FPA](https://fpa.freecad.org) offers developers the opportunity
-to apply for a grant to work on projects of their choosing. Check
-[jobs and funding](https://blog.freecad.org/jobs/) to know more.
+> The [FPA](https://fpa.freecad.org) offers developers the opportunity
+> to apply for a grant to work on projects of their choosing. Check
+> [jobs and funding](https://blog.freecad.org/jobs/) to know more.
 
-
-Usage & Getting Help
---------------------
+## Usage & Getting Help
 
 The FreeCAD wiki contains documentation on general usage and Python scripting.
 View these pages for more information:
